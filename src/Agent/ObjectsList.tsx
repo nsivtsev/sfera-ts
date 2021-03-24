@@ -8,13 +8,12 @@ type ObjectListProps = {
 
 export default function ObjectsList(props :ObjectListProps): ReactElement {
     return (
-        <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden mb-3">
-            <div className="bg-gray-200 text-lg px-6 py-4 font-black">
-                <img src={process.env.REACT_APP_BASE_URL + props.object.image.tmb}/>
+        <div className="flex flex-col mb-3 border-b-2 border-blue-200">
+            <h1 className="text-2xl text-blue-400">
                 {props.object.name}
-            </div>
+            </h1>
             {props.object.lines.map((line) => {
-                return <LinesList line={line} />
+                return <LinesList line={line} key={line.id} />
             })}
         </div>
     );

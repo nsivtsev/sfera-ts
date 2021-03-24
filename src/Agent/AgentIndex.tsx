@@ -169,7 +169,7 @@ function AgentIndex() {
     return (
         <div>
             {objects.map((object: Object) => {
-                return <ObjectsList object={object} />
+                return <ObjectsList object={object} key={object.id} />
             })}
         </div>
     );
