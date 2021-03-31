@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import AgentIndex from "./Agent/AgentIndex";
+import Landing from "./Landing/Landing";
 
 function App() {
   return (
-      <AgentIndex />
+      <Landing />
   );
 }
 

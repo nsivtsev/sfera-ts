@@ -1,0 +1,16 @@
+.landing__container {
+    padding-top: 134px;
+}
+
+.landing__slogan {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.landing__about {
+    width: 620px;
+    margin-top: 94px;
+}
